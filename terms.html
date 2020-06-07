@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Launchaco</title>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="images/emblem.png" />
+
+
+    <link rel="stylesheet" href="https://www.launchaco.com/static/AllTemplates.min.css">
+
+    <style>
+      .launchaco-promo {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        z-index: 999999;
+      }
+
+      .launchaco-promo__active {
+        width: initial;
+        height: initial;
+      }
+
+      .launchaco-promo-speechbubble {
+        font-family: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+        position: absolute;
+        left: 50px;
+        top: -11px;
+        padding: 9px;
+        color: white;
+        border-radius: 3px;
+        background: linear-gradient(#227ef7, #1290fc);
+        font-size: 14px;
+        font-weight: 600;
+        width: 93px;
+        box-sizing: border-box;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .15s ease-in-out;
+      }
+
+      .launchaco-promo__active:hover .launchaco-promo-speechbubble {
+        opacity: 1;
+      }
+
+      .launchaco-promo svg {
+        transition: all .3s ease-in-out;
+        opacity: 0;
+      }
+
+      .launchaco-promo__active svg {
+        opacity: 1;
+      }
+
+      .launchaco-promo-speechbubble:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        left: -4px;
+        bottom: 10px;
+        border-radius: 3px;
+        background: #1290fc;
+        z-index: 2;
+        position: absolute
+      }
+
+      .launchaco-promo__active .launchaco-promo-speechbubble__animate {
+        animation: popinpopup 3s linear forwards 0.1s;
+      }
+
+      @keyframes popinpopup {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 3px, 0)
+        }
+
+        7%,
+        93% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0)
+        }
+
+        100% {
+          opacity: 0;
+          transform: translate3d(0, -4px, 0)
+        }
+      }
+
+      .launchaco-promo-animate:hover {
+        opacity: 1 !important;
+      }
+    </style>
+
+
+    <style>
+
+    </style>
+  </head>
+
+  <body class="font-neutral">
+    <div class="black-white">
+      <!---->
+      <header class="header">
+        <div class="container-lrg">
+          <div class="flex col-12 spread"><a href="index.html" class="logo launchaco-builder-hoverable logo"><img src="images/logo.png" alt="subspce"></a> <a href="#main-menu" id="menu" class="menu-toggle"><b class="nav-link mr0 secondary-color">☰</b></a>
+            <nav id="main-menu" role="navigation" class="main-menu"><a href="#" id="main-menu-close" class="menu-close"><span class="bold">✕</span></a> <a href="terms.html" class="nav-link secondary-color">Terms</a> 
+              <a href="privacy.html" class="nav-link secondary-color">Privacy</a> <a href="mailto:subspce@gmail.com" class="nav-link secondary-color">Get in touch</a></nav>
+          </div>
+        </div>
+      </header>
+      <section class="section">
+        <div class="container mb40">
+          <div class="col-12 text-center">
+            <h1 class="heading-lrg primary-color launchaco-builder-hoverable"></h1>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <!---->
+      </section>
+    </div>
+    <section id="faq-1" class="section black-white" sitemeta="[object Object]" activepage="Terms of Service">
+      <div class="container">
+        <div class="col-12 text-center">
+          <h3 class="heading primary-color launchaco-builder-hoverable">
+            Terms of Service
+          </h3>
+          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">
+            Last updated: June 5th 2020
+          </p>
+          <!---->
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+              Introduction
+            </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              Subspce is a software application created by a small team based out of Toronto, Canada. In this terms of service, we hope to clearly explain the functionality of our product, and what you agree to by using it. If you have any questions or comments, please reach out to us at subspce@gmail.com.            </p>
+          </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Terms of Use
+            </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              These Terms of Use (the “Agreement”) sets forth the terms and conditions that apply to your access and use of the website, and the software application (collectively, the “Service”) provided by Subspce, a Toronto-based business. The Service includes, but is not limited to, the Subspce Chrome Extension on desktop web browsers, and the website www.subspce.app (the “Website”).           </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Accepting the Terms
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              By using the Service, you agree to be bound by this Agreement and the Privacy Policy, regardless of your use of the service. Moving forward, the term “you” or “User” refers to anyone using the Service. The term “we” or “our” refers to Subspce. You may not use the Service and you may not accept this Agreement if you are not of a legal age to form a binding contract with Subspce. If you accept this Agreement, you represent that you have the capacity to be bound by it or if you are acting on behalf of a company or entity that you have the authority to bind such entity. If you do not agree to this Agreement, please don’t use the Service.        </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Privacy and your Personal Information
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              For information about Subspce’s privacy and data protection practices, please read Subspce’s Privacy Policy found at www.subpace.app/privacy. Our privacy policy explains how Subspce collects, uses and shares your information that you provide when you access the Service. By using the Service, you consent to Subspce’s collection, use, and sharing of your information as set forth in our privacy policy.          </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Description of Service
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              The Service enables users to create their own subspaces on their browser. A subspace refers to a collection of browser windows and the tabs within those windows. The Service allows the users to create their own sessions with a date-timestamp for the start and end of it, and attach a subspace of their choosing to it. When the session starts, the collection of browser windows and tabs in the attached subspace will automatically open for the user. 
+            </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Rights you Grant to us
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              content to Subspce solely for the purpose of providing the Service. Subspce may use and store the content, but only to provide the Service to you. By submitting this content to Subspce, you represent that you are entitled to submit it to Subspce for use for this purpose, without any obligation by Subspce to pay any fees or other limitations.          </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Limitations on Subspce’s Liability
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              You expressly understand and agree that: 
+              Neither Subspce, any content owner or third party licensor, nor their respective directors, officers, employees, agents, contractors, subsidiaries or affiliated companies will be liable for any indirect, incidental, punitive, special, consequential or exemplary damages (even if Subspce or content owners have been advised of the possibility of such damages) or loss of any kind arising from your use of the Subspce service or from content, information, materials or products included on or otherwise made available to you through the Subspce service, or for any damages in excess of the amount paid for the specific item of content giving rise to the applicable claim for damages.
+              You acknowledge and agree that your submission of any information is at your sole risk, and to the maximum amount permitted by law, Subspce hereby disclaims any and all liability to you for any loss or liability relating to such information in any way.
+                        </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Your Indemnification of Subspce
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              You shall defend, indemnify and hold harmless Subspce and its employees, from and against all claims and expenses, including but not limited to attorneys fees, in whole or in part arising out of or attributable to your use of the Service) or any breach of this Agreement by you or your violation of any law or the rights of a third party when using the Service.          </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Modifications
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              Subspce may modify this Agreement from time to time. Any and all changes to this Agreement will be posted on the Website. In addition, the Agreement will always indicate the date it was last revised. You are deemed to accept and agree to be bound by any changes to the Agreement when you use the Service after those changes are posted.          </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Copyright
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              By using the Service, you recognize that the Subspce Service, including the Chrome extension and future applications, is subject to copyright laws. It may not be copied, reproduced, rebroadcast or commercially exploited in all or any part.          </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Miscellaneous
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              If any portion of this Agreement is deemed unlawful, void or unenforceable by any arbitrator or court of competent jurisdiction, this Agreement as a whole shall not be deemed unlawful, void or unenforceable, but only that portion of this Agreement that is unlawful, void or unenforceable shall be stricken from this Agreement.
+              You agree that if Subspce does not exercise or enforce any legal right or remedy which is contained in the Agreement (or which Subspce has the benefit of under any applicable law), this will not be taken to be a formal waiver of Subspce’s rights and that those rights or remedies will still be available to Subspce.
+              All covenants, agreements, representations and warranties made in this Agreement shall survive your acceptance of this Agreement and the termination of this Agreement.
+                        </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Termination
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              These Terms of Use (the “Agreement”) sets forth the terms and conditions that apply to your access and use of the website, and the software application (collectively, the “Service”) provided by Subspce, a Toronto-based business. The Service includes, but is not limited to, the Subspce extension on desktop web browsers, and the website at www.subspce.app (the “Website”).             </p>
+          </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Contact Us
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              We welcome any questions, comments, or concerns. To get in touch with us, please email us at subspce@gmail.com.          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+
+  <script>
+    window.onscroll = function()
+    {
+      showAd()
+    }
+
+    function showAd()
+    {
+      var scrollBarPosition = window.pageYOffset | document.body.scrollTop;
+
+      // At specifiv position do what you want
+      if (scrollBarPosition > 300)
+      {
+        document.getElementById("visual-dreamer").className = "launchaco-promo launchaco-promo__active";
+        window.onscroll = function() {};
+      }
+    }
+  </script>
+
+</html>

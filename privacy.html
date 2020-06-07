@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Launchaco</title>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="images/emblem.png" />
+
+
+    <link rel="stylesheet" href="https://www.launchaco.com/static/AllTemplates.min.css">
+
+    <style>
+      .launchaco-promo {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        z-index: 999999;
+      }
+
+      .launchaco-promo__active {
+        width: initial;
+        height: initial;
+      }
+
+      .launchaco-promo-speechbubble {
+        font-family: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+        position: absolute;
+        left: 50px;
+        top: -11px;
+        padding: 9px;
+        color: white;
+        border-radius: 3px;
+        background: linear-gradient(#227ef7, #1290fc);
+        font-size: 14px;
+        font-weight: 600;
+        width: 93px;
+        box-sizing: border-box;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .15s ease-in-out;
+      }
+
+      .launchaco-promo__active:hover .launchaco-promo-speechbubble {
+        opacity: 1;
+      }
+
+      .launchaco-promo svg {
+        transition: all .3s ease-in-out;
+        opacity: 0;
+      }
+
+      .launchaco-promo__active svg {
+        opacity: 1;
+      }
+
+      .launchaco-promo-speechbubble:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        left: -4px;
+        bottom: 10px;
+        border-radius: 3px;
+        background: #1290fc;
+        z-index: 2;
+        position: absolute
+      }
+
+      .launchaco-promo__active .launchaco-promo-speechbubble__animate {
+        animation: popinpopup 3s linear forwards 0.1s;
+      }
+
+      @keyframes popinpopup {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 3px, 0)
+        }
+
+        7%,
+        93% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0)
+        }
+
+        100% {
+          opacity: 0;
+          transform: translate3d(0, -4px, 0)
+        }
+      }
+
+      .launchaco-promo-animate:hover {
+        opacity: 1 !important;
+      }
+    </style>
+
+
+    <style>
+
+    </style>
+  </head>
+
+  <body class="font-neutral">
+    <div class="black-white">
+      <!---->
+      <header class="header">
+        <div class="container-lrg">
+          <div class="flex col-12 spread"><a href="index.html" class="logo launchaco-builder-hoverable logo"><img src="images/logo.png" alt="subspce"></a> <a href="#main-menu" id="menu" class="menu-toggle"><b class="nav-link mr0 secondary-color">☰</b></a>
+            <nav id="main-menu" role="navigation" class="main-menu"><a href="#" id="main-menu-close" class="menu-close"><span class="bold">✕</span></a> <a href="terms.html" class="nav-link secondary-color">Terms</a> 
+              <a href="privacy.html" class="nav-link secondary-color">Privacy</a> <a href="mailto:subspce@gmail.com" class="nav-link secondary-color">Get in touch</a></nav>
+          </div>
+        </div>
+      </header>
+      <section class="section">
+        <div class="container mb40">
+          <div class="col-12 text-center">
+            <h1 class="heading-lrg primary-color launchaco-builder-hoverable"></h1>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <!---->
+      </section>
+    </div>
+    <section id="faq-1" class="section black-white" sitemeta="[object Object]" activepage="Terms of Service">
+      <div class="container">
+        <div class="col-12 text-center">
+          <h3 class="heading primary-color launchaco-builder-hoverable">
+            Privacy Policy
+          </h3>
+          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">
+            Last updated: June 5th 2020
+          </p>
+          <!---->
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+              Introduction
+            </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              At Subspce, we understand how critical it is for us to be transparent with what data we collect and how we utilize it to run our Service. In this Privacy Policy, we will be going in-depth into what data we collect, how it is used specifically, where it is stored, and all the actions user’s can take to collect, use, and access the information we store. Moving forward, the term “you” or “User” refers to anyone using the Service. The term “we” or “our” refers to Subspce.            </p>
+          </div>
+        </div>
+        <div class="col-12 mt40">
+            <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+              Information Collected and Received
+            </b>
+              <p class="paragraph secondary-color launchaco-builder-hoverable">
+                The information collected by Subspce is limited to the following.
+              </p>
+            </div>
+            <div class="col-12 mt40">
+              <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+                Subspce Chrome Extension
+              </b>
+                <p class="paragraph secondary-color launchaco-builder-hoverable">
+                  In Subspce, users are allowed to create their own subspaces (saved chrome window and tab configurations). Through this functionality, we store the different subspaces users create, along with the information within each of them, namely the windows and tabs the users designate for each subspace. </p>
+                </div>
+            </div>
+            <div class="col-12 mt40">
+              <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+                Google Calendar               </b>
+                <p class="paragraph secondary-color launchaco-builder-hoverable">
+                  Subspce integrates with Google Calendar to allow users to attach a subspace to their Google Calendar events. From this, we need to collect the information regarding a user’s event in Google Calendar and convert it into an event within Subspce. As a result, we store the date and time of a user’s Google Calendar event if a user attaches a subspace to it.                 </div>
+            </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Information Not Collected
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              The information that is not collected includes by Subspce includes following.
+            </p>
+          </div>
+          <div class="col-12 mt40">
+            <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+              Google Calendar 
+            </b>
+              <p class="paragraph secondary-color launchaco-builder-hoverable">
+                Subspce does not store any data from Google Calendar events outside of the date and time, which is required for the Service to function.              </div>
+          </div>
+          <div class="col-12 mt40">
+            <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+              Personal Information               </b>
+              <p class="paragraph secondary-color launchaco-builder-hoverable">
+                Subspce does not collect any personal information, such as name, address, phone number or email addresses.          </div>
+          </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Read Browser History           </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              This permission is required to allow Subspace.app to save the current tabs and windows the user has open as a subspace. To be specific, we read the browser history to grab the website URLs and tab titles to save within a subspace. Outside of this, we do not ask for the permission to, nor have any desire to, view the contents of the websites the user visits, nor any information that is filled in within those tabs by the user.           </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Minors          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              Subspce is for a general audience and does not specifically target minors. Subspce does not collect or store any personal information from its users.          </div>
+        </div>
+        <div class="col-12 mt40">
+          <div class="faq pad20"><b class="bold primary-color launchaco-builder-hoverable">
+            Changes to Our Privacy Policy
+          </b>
+            <p class="paragraph secondary-color launchaco-builder-hoverable">
+              Any changes to the Privacy Policy that affect how we collect, use, store or allow access to data will be clearly outlined in the Privacy Policy. The data of the last modification of our Privacy Policy will always be at the top of the page. In the event of any changes, there will be a clear notification of such on Subspce’s interface, and sent through to user’s who opted in to email communications.           </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+
+  <script>
+    window.onscroll = function()
+    {
+      showAd()
+    }
+
+    function showAd()
+    {
+      var scrollBarPosition = window.pageYOffset | document.body.scrollTop;
+
+      // At specifiv position do what you want
+      if (scrollBarPosition > 300)
+      {
+        document.getElementById("visual-dreamer").className = "launchaco-promo launchaco-promo__active";
+        window.onscroll = function() {};
+      }
+    }
+  </script>
+
+</html>
